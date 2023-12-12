@@ -49,10 +49,7 @@ This C++ program reads TED Talks information from a file and provides an interac
    ```bash
    git clone https://github.com/your-username/repo.git
    cd repo
-
-2. Compile the program:
-    make
-    ./test1
-
+   make
+   ./test1
 
 
