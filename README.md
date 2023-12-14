@@ -7,9 +7,9 @@ This C++ program reads TED Talks information from a file and provides an interac
 
 1. **Load Talks File**
    - Load talk entries from a specified file.
-   - If the file doesn't exist, the program continues running, and users can choose other options.
-   - The file format is assumed to be consistent (duration, talk title, overview, ---).
-   - File format example: `duration talk_title overview ---`
+   - If the file doesn't exist, the program will ask users again to load a file.
+   - The file format is assumed to be consistent (including Duration, Overview, Title, ---).
+   - File format example: Please check the CSTalksList.txt for more reference.
 
 2. **List Talks Sorted by Duration**
    - List talk entries from shortest to longest duration.
@@ -41,7 +41,7 @@ This C++ program reads TED Talks information from a file and provides an interac
 
 - Use the provided header files (`a4_talklib.hpp` and `a4_talkList.hpp`) and corresponding implementation files.
 - Utilize the `Talk` struct defined in `a4_talklib` and the `vector` template in C++ to store talk information.
-- No memory leaks; use `new` and `delete` for memory management.
+- No memory leaks; use `valgrind --leak-check=yes ./test1` in Linux environment; use `new` and `delete` for memory management.
 - Follow C++ conventions for console I/O, file I/O, and text manipulation.
 
 ## Usage
